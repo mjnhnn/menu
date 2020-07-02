@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="menu-wrap">
+        <div class="menu-wrap_logo">
+            <h1>LOGO LOCO</h1>
+        </div>
+
+        <ul class="menu-wrap_list">
+            <li class="menu-wrap_link">Home</li>
+            <li class="menu-wrap_link">Listings</li>
+            <li class="menu-wrap_link">User panel</li>
+            <li class="menu-wrap_link">Pages</li>
+        </ul>
+        <div class="menu-wrap_btn">
+            <div class="menu-wrap_btn-reg">
+                <h3>
+                    <i class="fas fa-users"></i> Register</h3>
+            </div>
+            <button>+ Add Listings</button>
+        </div>
+        <div class="menu-wrap_bars"><i class="fas fa-bars"></i></div>
+    </div>
+    <script>
+        var btnBars = document.querySelector('.menu-wrap_bars>i'),
+            listMenu = document.querySelector('.menu-wrap_list'),
+            btnMenu = document.querySelector('.menu-wrap_btn');
+        btnBars.onclick = function() {
+            listMenu.classList.toggle('hide-menu');
+            btnMenu.classList.toggle('hide-menu');
+        }
+    </script>
+</body>
+
+</html>
